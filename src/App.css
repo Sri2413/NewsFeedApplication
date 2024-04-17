@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
+.li{
+  color: black;
+  background-color:white;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  border-radius: 8px;
+  padding: 10px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* margin-left: 2000px;  */
+  
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.card a {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.card a:hover {
+  color: #0056b3;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.b {
   color: white;
+  background-color: #223232;
+  border: 2px solid white;
+  width: 140px;
+  height: 40px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.b:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px lightseagreen;
 }
